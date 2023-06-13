@@ -1,20 +1,24 @@
 {
-  "name": "skeleton-node-express-mongo",
+  "name": "basic-node-express-mongo",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Basic project with NodeJS, Express, and MongoDB.",
+  "main": "src/index.js",
   "scripts": {
-    "start": "node index.js",
-    "dev": "nodemon index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "NODE_ENV=production node src/index.js",
+    "start:dev": "NODE_ENV=development nodemon src/index.js"
   },
-  "author": "",
+  "author": "David T. Pizarro Frick",
   "license": "ISC",
   "dependencies": {
+    "dotenv": "^16.0.3",
     "express": "^4.18.2",
-    "mongoose": "^7.0.0"
+    "helmet": "^7.0.0",
+    "mongoose": "^7.2.0"
   },
   "devDependencies": {
+    "eslint": "^8.42.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.27.5",
     "nodemon": "^2.0.20"
   }
 }
